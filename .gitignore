@@ -1,1 +1,4 @@
 node_modules
+test/example/index.html
+test/example/app.js
+test/example/style.css

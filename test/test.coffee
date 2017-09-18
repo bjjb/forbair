@@ -22,7 +22,8 @@ describe 'an example project', ->
   oldwd = process.cwd()
   before ->
     process.chdir('test/example')
-  after ->
+  after (done) ->
+    exec 'make', ['clean'], done
     process.chdir(oldwd)
   it 'works as expected', (done) ->
-    exec 'make', ['clean', 'all'], done
+    exec 'make', ['all'], done

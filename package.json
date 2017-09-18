@@ -1,7 +1,7 @@
 {
   "name": "forbair",
-  "version": "0.0.1",
-  "description": "Helpers for working with Pug, Stylus, Coffee-Script and Express",
+  "version": "0.0.2",
+  "description": "App development helpers for pug, stylus and coffee-script",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -18,7 +18,7 @@
     "development"
   ],
   "author": "bjjb <jj@bjjb.org> (https://bjjb.org)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjjb/forbair/issues"
   },
@@ -29,10 +29,8 @@
     "glob": "^7.1.2",
     "mocha": "^3.5.3",
     "pug": "^2.0.0-rc.4",
-    "stylus": "^0.54.5"
-  },
-  "devDependencies": {
     "express": "^4.15.4",
-    "morgan": "^1.8.2"
+    "morgan": "^1.8.2",
+    "stylus": "^0.54.5"
   }
 }
