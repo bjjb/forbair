@@ -2,11 +2,17 @@ fs    = require 'fs'
 path  = require 'path'
 glob  = require 'glob'
 
+# Lists the files given by the pattern, and returns a promise which resolves
+# to the matching files.
+# TODO - should be called something else, as it's not like ls(1)
 ls = (pattern) ->
   new Promise (resolve, reject) ->
     glob pattern, (err, files) ->
       resolve(files)
 
+
+# Reads the contents of filename, returning a promise which resolves to the
+# contents.
 read = (filename) ->
   new Promise (resolve, reject) ->
     fs.readFile filename, 'utf8', (err, data) ->
@@ -39,6 +45,7 @@ unlink = (filename) ->
 
 files = { read, write, unlink, ls, source }
 
+# Logs and returns `arg` (for chaining in promises)
 log = (arg) ->
   console.log arg
   return arg

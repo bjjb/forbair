@@ -1,5 +1,7 @@
 { generate, serve } = require '../..'
 
 TARGETS = ['index.html', 'app.js', 'style.css']
+
 task(t, "build the #{t}", generate) for t in TARGETS
+
 task 'start', 'start a dev server', serve

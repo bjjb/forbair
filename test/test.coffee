@@ -19,11 +19,7 @@ describe 'forbair', ->
     expect(forbair.compiler).to.be.a 'function'
 
 describe 'an example project', ->
-  oldwd = process.cwd()
-  before ->
-    process.chdir('test/example')
   after (done) ->
-    exec 'make', ['clean'], done
-    process.chdir(oldwd)
+    exec 'make', ['-C', 'test/example', 'clean'], done
   it 'works as expected', (done) ->
-    exec 'make', ['all'], done
+    exec 'make', ['-C', 'test/example', 'all'], done
