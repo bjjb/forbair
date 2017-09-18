@@ -1,0 +1,5 @@
+index.coffee
+lib/*.coffee
+test/*.coffee
+Makefile
+Cakefile
