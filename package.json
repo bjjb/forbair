@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/bjjb/forbair/issues"
   },
-  "homepage": "https://bjjb.github.com/forbair",
+  "homepage": "https://bjjb.github.io/forbair",
   "dependencies": {
     "chai": "^4.1.2",
     "coffee-script": "^1.12.7",
