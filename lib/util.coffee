@@ -25,7 +25,7 @@ source = (filename) ->
     when '.html' then filename.replace(/\.html$/, '.pug')
     when '.css' then filename.replace(/\.css$/, '.styl')
     when '.js' then filename.replace(/\.js$/, '.coffee')
-    else throw new Exception("Unknown source for #{filename}")
+    else throw new Error("Unknown source for #{filename}")
 
 # Gets a function which overwrites or creates the given file. The function
 # returns a promise.
